@@ -1,0 +1,30 @@
+@import '../../styles/variables';
+
+.colorsRadioContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .colorsRadioGroup {
+    display: flex;
+    gap: 10px;
+
+    .colorsFormRadio {
+      padding-left: 20px;
+
+      .colorsRadioItem {
+        display: flex;
+        align-items: center;
+
+        .colorsRadio {
+        }
+
+        .labelControl {
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

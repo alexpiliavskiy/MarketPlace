@@ -1,0 +1,33 @@
+$font-size-main: 16px;
+$font-family: "Jost", sans-serif;
+$font-weight-main: 400;
+$line-height-main: 1.1;
+$outline-main: none;
+
+$main-color: #222222;
+$second-color: rgba(118, 118, 118, 0.36);
+$white-color: #fff;
+$socialBtnFacebook: #18324f;
+$socialBtnTwitter: #26C4F1FF;
+$socialBtnPinterest: #E82B2DFF;
+$support-color: #141F46;
+$text-color-footer: #E4E4E4;
+$background-color-main: #cccccc;
+$background-color-gray: gray;
+$background-color-footer: rgb(34, 34, 34);
+$background-color-section: red;
+$background-color-delete: #970016;
+$background-color-delete-hover: #5c000f;
+$background-color-upload: #1c3b9c;
+$background-color-upload-hover: #1c2d67;
+$background-color-sale: #D6001C;
+$background-color-Input: #353535;
+$background-color-Done: #B9A16B;
+$background-color-verify: #2d9f00;
+
+@mixin reset-box-model {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}

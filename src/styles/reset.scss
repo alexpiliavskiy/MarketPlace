@@ -1,0 +1,43 @@
+@import 'variables';
+
+*,
+*::before,
+*::after {
+  @include reset-box-model;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: $font-size-main;
+  font-weight: $font-weight-main;
+  line-height: $line-height-main;
+  font-family: $font-family;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:focus {
+  outline: $outline-main;
+  outline-offset: $outline-main;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}

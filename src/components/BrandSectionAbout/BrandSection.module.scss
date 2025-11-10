@@ -1,0 +1,19 @@
+@import 'src/styles/variables';
+
+.shopItemCategory {
+  max-width: 1413px;
+  padding-bottom: 82px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  object-fit: cover;
+
+
+
+  .cardCategoryItemImage {
+    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

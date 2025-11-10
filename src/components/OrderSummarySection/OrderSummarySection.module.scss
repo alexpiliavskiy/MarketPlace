@@ -1,0 +1,68 @@
+@import '../../styles/variables';
+
+.summaryContainer {
+  border: 1px solid $main-color;
+  padding: 38px;
+  margin-bottom: 20px;
+  margin-top: 8px;
+
+
+  .mainTitle {
+    color: $main-color;
+    font-size: $font-size-main;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 23px;
+    margin-bottom: 35px;
+  }
+
+  .orderSummary {
+    display: flex;
+    flex-direction: column;
+
+    .productLabel {
+      color: $main-color;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      margin-bottom: 13px;
+    }
+
+    .productItem {
+      color: $second-color;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
+
+    .divider {
+      height: 1px;
+      background: $second-color;
+      margin-bottom: 15px;
+    }
+
+    .textContent {
+      display: flex;
+      justify-content: space-between;
+
+      .subTitle {
+        color: $main-color;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-bottom: 13px;
+      }
+
+      .subValue {
+        color: $main-color;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-bottom: 13px;
+      }
+    }
+  }
+}
+
+

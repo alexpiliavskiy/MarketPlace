@@ -1,0 +1,82 @@
+@import '../../styles/variables';
+
+.progressContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .linkProgress {
+    display: flex;
+    cursor: pointer;
+
+    @media (max-width: 991.98px) {
+      flex: 1 1 45%;
+      margin: 10px;
+    }
+
+    @media (max-width: 767.98px) {
+      flex: 1 1 100%;
+    }
+
+    .numberProgress {
+      color: $main-color;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 26px;
+      margin-right: 10px;
+    }
+
+    .progressTitle {
+      color: $main-color;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 26px;
+      transition: color 0.3s ease-in-out;
+      margin-bottom: 1px;
+
+      @media (max-width: 991.98px) {
+        font-size: $font-size-main;
+        line-height: 18px;
+        margin-bottom: 5px;
+      }
+
+      @media (max-width: 767.98px) {
+        font-size: $font-size-main;
+        line-height: 16px;
+      }
+
+      &.isActive {
+        color: $main-color;
+      }
+    }
+
+    .progressSubTitle {
+      color: $second-color;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 30px;
+
+      @media (max-width: 991.98px) {
+        line-height: 18px;
+      }
+    }
+  }
+}
+
+.progressLine {
+  height: 2px;
+  background-color: $second-color;
+  margin-top: 16px;
+  position: relative;
+  margin-bottom: 50px;
+
+  @media (max-width: 991.98px) {
+    display: none;
+  }
+}
+
+.progressFill {
+  height: 100%;
+  background-color: $main-color;
+  transition: width 0.4s ease-in-out;
+}

@@ -1,0 +1,201 @@
+@import 'src/styles/variables';
+
+.cartPage {
+
+  .cartTitle {
+    color: $main-color;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 51px;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+
+    @media (max-width: 767.98px) {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+  }
+
+  .cartContainer {
+
+    .tableContainer {
+
+      .tableHeader {
+        color: $main-color;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        margin-bottom: 38px;
+      }
+
+      .tableBodyContent {
+
+        .titleProduct {
+          color: $background-color-section;
+          font-size: 20px;
+          text-align: center;
+          margin-top: 10px;
+        }
+
+        .tableRow {
+
+          .productInfo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .imageUrl {
+              flex: 0 1 50%;
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+              margin-right: 26px;
+            }
+
+            .productTitle {
+              flex: 0 1 50%;
+              text-align: left;
+              color: $main-color;
+              font-size: $font-size-main;
+              font-weight: $font-weight-main;
+              line-height: 23px;
+              margin-bottom: 4px;
+            }
+
+            .headerItem {
+              flex: 0 1 50%;
+              color: $background-color-gray;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 24px;
+            }
+          }
+
+          .price {
+            color: $second-color;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 23px;
+          }
+
+          .quantityControl {
+            border: 2px solid $text-color-footer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 110px;
+
+            .quantityInput {
+            }
+
+            .quantityBtn {
+              color: $second-color;
+              background-color: transparent;
+              font-size: $font-size-main;
+              font-weight: 400;
+              line-height: 23px;
+              transition: all ease-in-out 0.3s;
+
+              &:hover {
+                color: $main-color;
+              }
+            }
+          }
+
+          .subQuantity {
+            color: $main-color;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 23px;
+          }
+
+          .removeButton {
+            color: $background-color-gray;
+            background-color: transparent;
+            transition: all ease-in-out 0.3s;
+
+            &:hover {
+              color: $main-color;
+            }
+          }
+        }
+      }
+    }
+
+    .cartActions {
+      justify-content: space-between;
+      display: flex;
+      margin-top: 32px;
+
+      @media (max-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .couponInput {
+        position: relative;
+        width: 370px;
+
+        @media (max-width: 1200px) {
+          width: 100%;
+        }
+      }
+
+      .applyCouponButton {
+        position: absolute;
+        right: 59%;
+        transform: translateX(-50%);
+        color: $main-color;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 20px 16px;
+        background: transparent;
+        transition: all ease-in-out 0.3s;
+
+        &:hover {
+          background: transparent;
+          color: $background-color-gray;
+        }
+
+        @media (max-width: 1200px) {
+          right: 30px;
+          transform: translateY(-90%);
+          margin-bottom: 5px;
+        }
+      }
+
+      .updateCartButton {
+        background-color: $second-color;
+        color: $main-color;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        padding: 14px 30px;
+        transition: all ease-in-out 0.3s;
+
+        &:hover {
+          background-color: $main-color;
+          color: $white-color;
+        }
+
+        @media (max-width: 1200px) {
+          margin-top: 20px;
+          width: 100%;
+        }
+      }
+    }
+
+    .placeCartButton {
+      width: 100%;
+      background: $main-color;
+      color: $white-color;
+      padding: 21px 50px;
+      margin-bottom: 100px;
+      transition: all 0.3s ease-out;
+
+      &:hover {
+        background-color: $background-color-Input;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../styles/variables';
+
+.wishlistContainer {
+
+  .mainTitle {
+    color: $main-color;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 51px;
+    text-transform: uppercase;
+    margin-bottom: 37px;
+
+    @media (max-width: 767.98px) {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+  }
+
+  .mainContentContainer {
+
+    .titleProduct {
+      text-align: center;
+      font-size: 20px;
+      color: $background-color-section;
+
+      @media (max-width: 991px) {
+        margin-top: 20px;
+      }
+    }
+
+    .contentContainer {
+      padding-top: 16px;
+    }
+  }
+}

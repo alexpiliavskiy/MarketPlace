@@ -1,0 +1,68 @@
+@import 'src/styles/variables';
+
+.cartConfirmPageContainer {
+
+  .cartTitle {
+    color: $main-color;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 51px;
+    text-transform: uppercase;
+    margin-bottom: 57px;
+  }
+
+  .checkIcon {
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 80px;
+    background-color: $background-color-Done;
+    color: $white-color;
+    margin-bottom: 19px;
+  }
+
+  .cartMainTitle {
+    color: $main-color;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 51px;
+  }
+
+  .cartSubTitle {
+    color: $second-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 36px;
+  }
+
+  .orderDetailContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 2px dashed $second-color;
+    margin-bottom: 36px;
+
+    .orderDetailItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: left;
+      margin: 41px;
+
+      .orderDetailTitle {
+        color: $second-color;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        margin-bottom: 4px;
+      }
+
+      .orderDetailValue {
+        color: $main-color;
+        font-size: $font-size-main;
+        font-weight: 500;
+        line-height: 23px;
+      }
+    }
+  }
+}

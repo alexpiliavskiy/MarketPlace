@@ -1,0 +1,103 @@
+@import 'src/styles/variables';
+
+.commentContainer {
+
+  .mainTitle {
+    margin-bottom: 20px;
+  }
+
+  .bodyContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .avatar {
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+    }
+
+    .author {
+      font-size: $font-size-main;
+      color: $main-color;
+    }
+
+    .date {
+      color: $background-color-main;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .reviewText {
+      margin-left: 70px;
+      font-size: 14px;
+      color: $background-color-gray;
+    }
+
+    .rating {
+      margin-left: auto;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.reviewForm {
+  margin-top: 60px;
+
+  .subTitleBottom {
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+
+  .titleBottom {
+    color: $background-color-gray;
+    margin-bottom: 40px;
+  }
+
+  .ratingContainer {
+    display: flex;
+    margin-bottom: 40px;
+
+    .text {
+      margin-right: 20px;
+    }
+  }
+}
+
+.formContainer {
+
+  .inputControl {
+  }
+
+  .formControl,
+  .formName,
+  .formEmail {
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    color: $main-color;
+    transition: all 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin-bottom: 20px;
+  }
+
+  .submitButton {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: $main-color;
+    color: $white-color;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 21px 95px;
+    transition: all ease-in 0.3s;
+
+    &:hover {
+      background-color: $background-color-Input;
+      color: $white-color;
+    }
+  }
+}
+
+
+

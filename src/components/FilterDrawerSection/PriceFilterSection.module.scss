@@ -1,0 +1,32 @@
+@import '../../styles/variables';
+
+.priceContainer {
+  padding: 0 10px;
+  margin-bottom: 20px;
+
+  .priceArrow {
+    color: $main-color;
+  }
+
+  .priceTitle {
+    color: $main-color;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 13px;
+  }
+
+  .priceContent {
+
+    .sliderRange {
+      color: $main-color;
+      margin-bottom: 10px;
+    }
+
+    .PriceRangeContainer {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

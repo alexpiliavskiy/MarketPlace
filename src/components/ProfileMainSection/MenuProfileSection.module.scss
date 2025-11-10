@@ -1,0 +1,25 @@
+@import '../../styles/variables';
+
+.linkItem {
+
+  .listItemTitle {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 50px;
+    transition: all ease-in-out 0.3s;
+
+    @media (max-width: 767.98px) {
+      text-align: center;
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: $background-color-gray;
+      text-decoration: underline;
+    }
+  }
+
+  .isActive {
+    color: $background-color-sale;
+  }
+}

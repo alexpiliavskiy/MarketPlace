@@ -1,0 +1,35 @@
+@import 'src/styles/variables';
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .showMoreBtn {
+    color: $main-color;
+    font-family: $font-family;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 42px;
+    margin-bottom: 100px;
+
+    &:after {
+      content: "";
+      width: 0;
+      height: 2px;
+      position: absolute;
+      left: 10px;
+      bottom: 0;
+      background: $main-color;
+      transition: width 0.28s cubic-bezier(0.47, 0, 0.745, 0.715);
+    }
+
+    &:hover {
+      background-color: transparent;
+      &:after {
+        width: calc(90% - 10px);
+      }
+    }
+  }
+}

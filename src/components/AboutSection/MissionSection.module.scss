@@ -1,0 +1,41 @@
+@import 'src/styles/variables';
+
+.missionContainer {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: 767.98px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .aboutSubTitle {
+    color: $main-color;
+    font-family: $font-family;
+    font-weight: $font-weight-main;
+    margin-bottom: 5px;
+
+    @media (max-width: 991.98px) {
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: 767.98px) {
+      padding-bottom: 5px;
+    }
+
+    @media (max-width: 467.98px) {
+      font-size: 14px;
+      font-weight: 700;
+      flex-direction: column;
+    }
+  }
+
+  .aboutSubText {
+    color: $main-color;
+    font-family: $font-family;
+    font-weight: $font-weight-main;
+    font-size: 14px;
+  }
+}

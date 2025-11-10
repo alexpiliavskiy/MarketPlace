@@ -1,0 +1,299 @@
+@import 'src/styles/variables';
+
+
+.MuiOutlinedInput-root {
+  &.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: transparent;
+  }
+
+  &:hover .MuiOutlinedInput-notchedOutline {
+    border-color: transparent;
+  }
+
+  .MuiOutlinedInput-notchedOutline {
+    border-color: transparent;
+  }
+}
+
+.footerSection {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 500;
+  padding: 93px 0;
+
+  .topSection {
+    margin-bottom: 103px;
+
+    .subscribe {
+
+      .subscribeTitle {
+        margin-bottom: 22px;
+      }
+      .subscribeText {
+        margin-bottom: 24px;
+      }
+      .subscribeForm {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .emailInput {
+          background-color: $background-color-Input;
+          color: $text-color-footer;
+          font-family: $font-family;
+          font-size: $font-size-main;
+          font-weight: $font-weight-main;
+          line-height: 24px;
+          margin-right: 20px;
+          width: 100%;
+        }
+
+        .joinButton {
+          background-color: $background-color-Input;
+          color: $text-color-footer;
+          font-family: $font-family;
+          font-size: $font-size-main;
+          font-weight: 500;
+          line-height: 24px;
+          transition: all ease-in 0.3s;
+          padding: 18px 60px;
+          text-transform: uppercase;
+
+          &:hover {
+            background-color: $second-color;
+            color: $text-color-footer;
+          }
+
+          @media (max-width: 991px) {
+            width: 100%;
+            margin-top: 10px;
+            padding: 18px 50px;
+          }
+        }
+      }
+    }
+  }
+
+  .bottomSection {
+    width: 100%;
+    margin-bottom: 88px;
+
+    .MuiGrid-item {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .socialIcons {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+
+      .iconBtn {
+        transition: all ease-in 0.3s;
+
+        &:hover {
+          background-color: transparent;
+          color: $background-color-gray;
+        }
+
+        @media (max-width: 600px) {
+          flex-grow: 1;
+        }
+      }
+    }
+
+    .sectionTitle {
+      color: $text-color-footer;
+      font-size: 18px;
+      font-weight: $font-weight-main;
+      line-height: 1;
+      margin-bottom: 32px;
+
+      @media (max-width: 991.98px) {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 560px) {
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+    }
+
+
+    .imageLogo {
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 15px;
+      width: 40%;
+      object-fit: cover;
+
+      @media (max-width: 600px) {
+        justify-content: center;
+        margin-left: 0;
+        width: 100%;
+      }
+
+      img {
+        display: flex;
+        color: $white-color;
+        z-index: 500;
+      }
+    }
+
+
+    .infoleft {}
+
+    .infoItem {
+      color: $text-color-footer;
+      font-family: $font-family;
+      font-size: $font-size-main;
+      font-weight: $font-weight-main;
+      line-height: 40px;
+      cursor: pointer;
+      transition: all ease-in 0.3s;
+
+      &:hover {
+        color: $background-color-main;
+        text-decoration: underline;
+      }
+
+      @media (max-width: 600px) {
+        flex-grow: 1;
+        text-align: center;
+      }
+    }
+
+    .linkItem {
+      white-space: nowrap;
+      text-align: center;
+      width: 100%;
+      color: $text-color-footer;
+      font-family: $font-family;
+      font-size: $font-size-main;
+      font-weight: $font-weight-main;
+      line-height: 40px;
+      cursor: pointer;
+      transition: all ease-in 0.3s;
+
+      @media (max-width: 991.98px) {
+        flex-wrap: wrap;
+      }
+
+      &:hover {
+        color: $background-color-main;
+        text-decoration: underline;
+      }
+    }
+
+    .timeItem {
+      white-space: nowrap;
+
+      @media (max-width: 1200px) {
+        flex-grow: 1;
+        text-align: center;
+      }
+    }
+  }
+
+  .lineDivider {
+    background-color: $white-color;
+    height: 1px;
+    opacity: 0.1;
+    width: 100%;
+    margin-bottom: 34px;
+  }
+
+  .footerBottom {
+
+    width: 100%;
+    height: 28px;
+    .additionalInfo {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .selectWrapper {
+      display: flex;
+      gap: 10px;
+    }
+
+    .select {
+      background-color: $background-color-footer;
+      color: $text-color-footer;
+
+      .MuiSelect-select {
+        background-color: $background-color-footer !important;
+        border-color: transparent;
+
+      }
+    }
+
+    .selectMenu {
+      .MuiPaper-root {
+        background-color: $background-color-footer !important;
+
+      }
+    }
+
+    .info {
+      font-family: $font-family;
+      font-size: $font-size-main;
+      font-weight: $font-weight-main;
+      line-height: 24px;
+      color: $background-color-footer;
+    }
+
+    .copyright {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: $text-color-footer;
+      font-family: $font-family;
+      font-size: $font-size-main;
+      font-weight: $font-weight-main;
+      line-height: 24px;
+    }
+
+    .customSelect {
+      background-color: #222222;
+      color: #FFFFFF;
+
+      & .MuiSelect-icon {
+        color: #FFFFFF;
+      }
+
+      & .MuiOutlinedInput-notchedOutline {
+      }
+
+      &:hover {
+        background-color: #333333;
+      }
+
+      &.Mui-focused {
+        background-color: #333333;
+
+      }
+
+      & .MuiMenuItem-root {
+        background-color: #222222;
+        color: #FFFFFF;
+
+        &:hover {
+          background-color: #333333;
+        }
+      }
+
+      & .MuiPaper-root {
+        background-color: #222222;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+

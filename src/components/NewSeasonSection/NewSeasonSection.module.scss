@@ -1,0 +1,44 @@
+@import 'src/styles/variables';
+
+.infoBanner {
+  background-image: url("/bigBannerSection.jpg");
+  background-size: cover;
+  background-position: 20% center;
+  padding: 255px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 500;
+
+  @media (max-width: 991.98px) {
+    padding: 230px 0;
+  }
+
+  @media (max-width: 767.98px) {
+    padding: 200px 0;
+  }
+
+  @media (max-width: 467.98px) {
+    padding: 180px 0;
+
+    .title {
+      font-size: 50px;
+    }
+  }
+
+  .cardCategoryContent {
+    text-align: center;
+    background: transparent;
+
+    .title {
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .description {
+      margin-bottom: 20px;
+    }
+
+
+  }
+}

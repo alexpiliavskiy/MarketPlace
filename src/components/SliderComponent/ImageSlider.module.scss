@@ -1,0 +1,199 @@
+@import 'src/styles/variables';
+
+.sliderContainer {
+  margin-top: 20px;
+  position: relative;
+
+  @media (max-width: 478px) {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+.mainSlider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  @media (max-width: 478px) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.prevArrow, .nextArrow, .zoomIcon {
+  position: absolute;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 478px) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.prevArrow {
+  left: 0;
+
+  @media (max-width: 478px) {
+    left: 15px;
+  }
+
+  &:hover {
+    background-color: $background-color-gray;
+    color: $white-color;
+  }
+}
+
+.nextArrow {
+  right: 0;
+
+  @media (max-width: 478px) {
+    right: 15px;
+  }
+
+  &:hover {
+    background-color: $background-color-gray;
+    color: $white-color;
+  }
+}
+
+.zoomIcon {
+  right: 10px;
+  bottom: 110px;
+  transition: all ease-in 0.3s;
+
+  @media (max-width: 900px) {
+    right: 5px;
+    bottom: 210px;
+  }
+
+  @media (max-width: 580px) {
+    right: 5px;
+    bottom: 120px;
+  }
+
+  @media (max-width: 478px) {
+    right: 15px;
+    bottom: 80px;
+  }
+
+  &:hover {
+    background-color: $background-color-gray;
+    color: $white-color;
+  }
+}
+
+.sliderImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+  @media (max-width: 478px) {
+    height: auto;
+  }
+}
+
+.thumbnailContainer {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+
+  @media (max-width: 900px) {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 769px) {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
+
+.thumbnail {
+  width: 92px;
+  height: 92px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: none;
+
+  @media (max-width: 478px) {
+    width: 60px;
+    height: 60px;
+  }
+
+  &.active {
+    border: 2px solid $main-color;
+  }
+}
+
+.modalContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+
+.modalImage {
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+
+  @media (max-width: 767.98px) {
+    width: 80%;
+  }
+
+  @media (max-width: 478px) {
+    width: 90%;
+  }
+}
+
+.modalPrevArrow, .modalNextArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 478px) {
+    width: 30px;
+    height: 30px;
+  }
+
+  &:hover {
+    background-color: $background-color-gray;
+    color: $white-color;
+  }
+}
+
+.modalPrevArrow {
+  left: 5%;
+}
+
+.modalNextArrow {
+  right: 5%;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  transition: all ease-in 0.3s;
+
+  &:hover {
+    background-color: $background-color-gray;
+    color: $white-color;
+  }
+}

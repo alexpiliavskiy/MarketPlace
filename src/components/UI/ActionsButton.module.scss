@@ -1,0 +1,40 @@
+@import 'src/styles/variables';
+
+.btnActionsContainer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .btnEditProduct {
+    background: $main-color;
+    color: $white-color;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-out;
+
+    @media (max-width: 991px) {
+      font-size: 12px;
+    }
+
+    &:hover {
+      background-color: $background-color-Input;
+    }
+  }
+
+  .btnDeleteProduct {
+    background: $background-color-delete;
+    color: $white-color;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-out;
+
+    @media (max-width: 991px) {
+      font-size: 12px;
+    }
+
+    &:hover {
+      background-color: $background-color-delete-hover;
+    }
+  }
+}

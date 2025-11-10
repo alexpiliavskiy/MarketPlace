@@ -1,0 +1,28 @@
+@import '../../styles/variables';
+
+.sizesBtnContainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  .btnSizes {
+    width: 58px;
+    height: 35px;
+    padding: 1px 21px;
+    border: 1px solid $text-color-footer;
+    background-color: transparent;
+    color: $main-color;
+    transition: all ease-in-out 0.3s;
+
+    &:hover {
+      background-color: $main-color;
+      color: $white-color;
+    }
+  }
+
+  .activeSize {
+    border: 1px solid rgb(34, 34, 34);
+    background-color: $background-color-Input;
+    color: $white-color;
+  }
+}

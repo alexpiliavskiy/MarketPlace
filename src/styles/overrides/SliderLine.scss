@@ -1,0 +1,42 @@
+@import '../variables';
+
+.dotsLine {
+  .slick-dots {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 4px;
+    background-color: $second-color;
+
+    li {
+      flex-grow: 1;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      position: relative;
+      background-color: transparent;
+
+      button {
+        display: none;
+      }
+
+      &.slick-active::before {
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        background-color: $main-color;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: width 0.5s ease;
+      }
+    }
+  }
+}
+

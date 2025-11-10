@@ -1,0 +1,68 @@
+@import '../../styles/variables';
+
+.brandsContainer {
+  padding: 0 10px;
+
+  .brandsArrow {
+    color: $main-color;
+  }
+
+  .brandsTitle {
+    color: $main-color;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 13px;
+  }
+
+  .brandsContent {
+
+    .searchContainer {
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      .searchInput {
+        margin-bottom: 5px;
+      }
+
+      .searchIcon {
+        position: absolute;
+        top: 18px;
+        right: 10px;
+      }
+    }
+
+    .searchTitle {
+      display: flex;
+      color: $main-color;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 10px;
+      span+span {
+        width: 100%;
+      }
+
+      .searchCheck {
+        background-color: transparent;
+        color: $main-color;
+      }
+
+      .labelContainer {
+        display: flex;
+        justify-content: space-between;
+
+        .brandTitle {
+          flex: 1;
+        }
+
+        .brandCount {
+          text-align: right;
+          color: $second-color;
+        }
+      }
+    }
+  }
+}

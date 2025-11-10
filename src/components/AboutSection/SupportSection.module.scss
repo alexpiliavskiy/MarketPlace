@@ -1,0 +1,60 @@
+@import 'src/styles/variables';
+
+.supportContainer {
+  padding-bottom: 106px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 991.98px) {
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: 767.98px) {
+    padding-bottom: 20px;
+  }
+
+  .supportItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 991.98px) {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: 767.98px) {
+      margin-bottom: 20px;
+    }
+
+    .imageSupport {
+      width: 39px;
+      height: 45px;
+      color: $support-color;
+      margin-right: 15px;
+    }
+
+    .textContainer {
+      .titleSupport {
+        color: $support-color;
+        font-family: $font-family;
+        font-size: $font-size-main;
+        font-weight: 500;
+        line-height: 23px;
+        margin-bottom: 4px;
+      }
+
+      .textSupport {
+        color: $second-color;
+        font-family: $font-family;
+        font-weight: $font-weight-main;
+        font-size: 15px;
+        line-height: 22px;
+      }
+    }
+  }
+}

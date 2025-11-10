@@ -1,0 +1,42 @@
+@import 'src/styles/variables';
+
+.formContainer {
+
+  .titleFormContainer {
+    color: $main-color;
+    font-family: $font-family;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 38px;
+    margin-bottom: 36px;
+  }
+
+  .inputControl {}
+
+  .formControl,
+  .formName,
+  .formEmail {
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    color: $main-color;
+    transition: all 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin-bottom: 30px;
+  }
+}
+
+.submitButton {
+  display: flex;
+  background-color: $main-color;
+  color: $white-color;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 21px 95px;
+  transition: all ease-in 0.3s;
+
+  &:hover {
+    background-color: $background-color-Input;
+    color: $white-color;
+  }
+}

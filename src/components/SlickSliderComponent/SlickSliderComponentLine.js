@@ -1,0 +1,18 @@
+import dynamic from 'next/dynamic';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { NextArrow, PrevArrow } from '@/components/SlickSliderComponent/CustomArrows';
+import '../../styles/overrides/SliderLine.scss';
+
+const SlickSlider = dynamic(() => import('react-slick'), { ssr: false });
+
+const SlickSliderComponentLine = (props) => {
+    const settings = {
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
+        ...props,
+    };
+    return <SlickSlider {...settings}>{props.children}</SlickSlider>;
+};
+
+export default SlickSliderComponentLine;

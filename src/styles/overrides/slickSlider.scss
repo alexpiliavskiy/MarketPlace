@@ -1,0 +1,44 @@
+@import 'src/styles/variables';
+
+.slickArrow {
+  width: 25px;
+  height: 25px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  &.slickPrev, &.slickNext {
+    width: auto;
+    height: auto;
+  }
+
+  &.slickPrev {
+    left: -50px;
+  }
+
+  &.slickNext {
+    right: -50px;
+  }
+
+  .arrowIcon {
+    width: 20px;
+    height: 20px;
+
+    @media(max-width: 1360px) {
+      width: 15px;
+      height: 15px;
+      display: none;
+    }
+  }
+
+  @media(max-width: 1360px) {
+    display: none !important;
+  }
+}

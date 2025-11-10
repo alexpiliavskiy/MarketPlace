@@ -1,0 +1,45 @@
+@import 'src/styles/variables';
+
+.cartTrackingPageContainer {
+  .infoContainer {
+
+    .cartTitle {
+      padding-top: 108px;
+      color: $main-color;
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 51px;
+      text-transform: uppercase;
+      margin-bottom: 51px;
+    }
+
+    .cartsubTitle {
+      color: $second-color;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .infoInput {
+
+    .placeTrackingButton {
+      width: 100%;
+      background: $main-color;
+      color: $white-color;
+      padding: 21px 50px;
+      margin-top: 23px;
+      margin-bottom: 70px;
+      transition: all 0.3s ease-out;
+
+      @media (max-width: 767.98px) {
+        margin-bottom: 50px;
+      }
+
+      &:hover {
+        background-color: $background-color-Input;
+      }
+    }
+  }
+}

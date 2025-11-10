@@ -1,0 +1,35 @@
+@import '../../styles/variables';
+
+.ResetFiltersContainer {
+  display: flex;
+  padding: 0 10px;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  .ResetFiltersBtn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    color: $main-color;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 15px 20px;
+  }
+}
+
+.ResetAllFiltersBtn {
+  background-color: rgb(238, 238, 238);
+  color: $main-color;
+  width: 100%;
+  padding: 15px 40px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    background-color: $background-color-Input;
+    color: $white-color;
+  }
+}

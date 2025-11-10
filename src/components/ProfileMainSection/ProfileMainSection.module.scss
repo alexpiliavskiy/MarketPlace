@@ -1,0 +1,56 @@
+@import '../../styles/variables';
+
+  .mainTitle {
+    color: $main-color;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 51px;
+    text-transform: uppercase;
+    margin-bottom: 46px;
+
+    @media (max-width: 767.98px) {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+  }
+
+  .contentContainer {
+    padding-top: 16px;
+
+    @media (max-width: 767.98px) {
+      margin-top: 20px;
+    }
+
+    .welcomeMessage {
+      color: $main-color;
+      font-size: 14px;
+      font-weight: $font-weight-main;
+      line-height: 24px;
+      margin-bottom: 20px;
+
+      .userName {}
+    }
+
+    .linkMessage {
+      color: $main-color;
+      font-size: 14px;
+      font-weight: $font-weight-main;
+      line-height: 24px;
+      transition: all ease-in-out 0.3s;
+    }
+    .link {
+      padding-left: 5px;
+      padding-right: 0;
+      color: $main-color;
+      background-color: transparent;
+      text-decoration: underline;
+      font-size: 14px;
+      font-weight: $font-weight-main;
+      line-height: 24px;
+      transition: all ease-in-out 0.3s;
+
+      &:hover {
+        color: $background-color-gray;
+      }
+    }
+  }

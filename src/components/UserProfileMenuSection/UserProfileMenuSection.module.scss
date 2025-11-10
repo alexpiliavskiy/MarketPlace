@@ -1,0 +1,42 @@
+@import 'src/styles/variables';
+
+.menuIcon {
+  overflow: visible;
+  width: 10px;
+  height: 10px;
+
+  &:hover {
+    background-color: transparent;
+    color: black;
+  }
+}
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.btnLogOut {
+  color: $main-color;
+  font-family: $font-family;
+  font-size: $font-size-main;
+  line-height: 24px;
+
+  &:after {
+    content: "";
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: $main-color;
+  }
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.menuOrigin {
+  transform-origin: top right;
+}

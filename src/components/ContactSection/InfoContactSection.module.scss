@@ -1,0 +1,74 @@
+@import 'src/styles/variables';
+
+.linkEmailText {
+  margin-bottom: 10px;
+
+  .emailLink {
+    position: relative;
+    margin-bottom: 10px;
+
+    &:after {
+      content: "";
+      width: 0;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: $main-color;
+      transition: width 0.28s cubic-bezier(0.47, 0, 0.745, 0.715);
+    }
+
+    &:hover {
+      background-color: transparent;
+
+      &:after {
+        width: calc(100%);
+      }
+    }
+  }
+}
+
+.linkPhoneText {
+  margin-bottom: 62px;
+
+  .phoneLink {
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 0;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: $main-color;
+      transition: width 0.28s cubic-bezier(0.47, 0, 0.745, 0.715);
+    }
+
+    &:hover {
+      background-color: transparent;
+
+      &:after {
+        width: calc(100%);
+      }
+    }
+  }
+}
+
+.topTitle {
+  color: $main-color;
+  font-family: $font-family;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 38px;
+  margin-bottom: 23px;
+}
+
+.topText {
+  color: $main-color;
+  font-family: $font-family;
+  font-weight: $font-weight-main;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 38px;
+}

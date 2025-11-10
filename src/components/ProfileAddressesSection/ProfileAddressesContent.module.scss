@@ -1,0 +1,70 @@
+@import '../../styles/variables';
+
+.addressesContentContainer {
+
+  .addressesContentText {
+    color: $main-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 62px;
+  }
+
+  .addressesInfo {
+
+    .addressesInfoMain {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .addressesInfoTitle {
+      color: $main-color;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 26px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .addressesInfoBtn {
+      color: $main-color;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 24px;
+      transition: all ease-in 0.3s;
+
+      &:hover {
+        text-decoration: underline;
+        color: $background-color-gray;
+      }
+    }
+
+    .addressesInfoText {
+      color: $main-color;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+
+      .infoEmail {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        transition: all ease-in 0.3s;
+
+        &:hover {
+          text-decoration: underline;
+          color: $background-color-gray;
+        }
+      }
+
+      .infoTel {
+        transition: all ease-in 0.3s;
+
+        &:hover {
+          text-decoration: underline;
+          color: $background-color-gray;
+        }
+      }
+    }
+  }
+}

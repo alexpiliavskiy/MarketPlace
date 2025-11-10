@@ -1,0 +1,29 @@
+@import 'src/styles/variables';
+
+.bottomContainer {
+
+  @media (max-width: 991.98px) {
+    text-align: center;
+  }
+
+  @media (max-width: 767.98px) {
+   text-align: center;
+  }
+
+  .titleBottom {}
+
+  .textBottom {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: 0;
+      border-radius: 50%;
+      width: 6px;
+      height: 6px;
+      background: rgb(196, 196, 196);
+    }
+  }
+}

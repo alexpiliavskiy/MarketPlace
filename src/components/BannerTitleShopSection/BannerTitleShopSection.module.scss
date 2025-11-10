@@ -1,0 +1,84 @@
+@import 'src/styles/variables';
+
+.bannerTitleSection {
+  position: relative;
+  background-image: url("/shop_banner.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 500;
+  opacity: 1;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    background-color: rgba(34, 34, 34, 0.4);
+  }
+
+  .title {
+    font-weight: 700;
+    margin-bottom: 13px;
+
+    @media (max-width: 991.98px) {
+      font-size: 50px;
+    }
+
+    @media (max-width: 520px) {
+      font-size: 40px;
+    }
+
+    @media (max-width: 467.98px) {
+      font-size: 35px;
+    }
+  }
+
+  .shopLinkCatalog {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+
+
+    .shopLink {
+      position: relative;
+      color: $white-color;
+      margin-right: 25px;
+    }
+  }
+}
+
+.activeLink {
+  color: $white-color;
+  margin-right: 25px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    margin-bottom: -2px;
+    background-color: white;
+    transition: all ease-in 0.3s;
+  }
+
+  &:hover {
+    background-color: transparent;
+
+    &:after {
+      width: calc(100% - 50px);
+    }
+  }
+}
+
+

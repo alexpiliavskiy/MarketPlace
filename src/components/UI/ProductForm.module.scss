@@ -1,0 +1,85 @@
+@import 'src/styles/variables';
+
+.formContainer {
+
+  .mainTitle {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .btnContainer {
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 18px;
+
+    @media (max-width: 1200px) {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+    }
+
+    @media (max-width: 991px) {
+      margin-top: 5px;
+    }
+
+    @media (max-width: 991px) {
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 2px;
+      padding: 18px 50px;
+    }
+
+    .saveBtnProduct {
+      width: 100%;
+      background-color: #2d9f00;
+      color: $white-color;
+      padding: 10px 40px;
+      transition: all 0.3s ease-out;
+
+      &:hover {
+        background-color: #257e00;
+      }
+    }
+
+    .saveBackBtnProduct {
+      width: 100%;
+      background-color: #1a5c00;
+      color: $white-color;
+      padding: 10px 40px;
+      transition: all 0.3s ease-out;
+
+      &:hover {
+        background-color: #164200;
+      }
+    }
+
+    .backBtnProduct {
+      width: 100%;
+      background: $main-color;
+      color: $white-color;
+      padding: 10px 40px;
+      transition: all 0.3s ease-out;
+
+      &:hover {
+        background-color: $background-color-Input;
+      }
+    }
+  }
+
+  .inputContainer {
+
+    .titleInput {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .priceInput {}
+
+    .salePriceInput {}
+  }
+}

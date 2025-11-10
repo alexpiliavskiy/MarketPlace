@@ -1,0 +1,68 @@
+@import 'src/styles/variables';
+
+.socialContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 14px 48px;
+  margin-bottom: 50px;
+
+  @media (max-width: 991.98px) {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .socialBtnFacebook {
+    background-color: $socialBtnFacebook;
+    color: $white-color;
+    margin-right: 10px;
+    transition: all ease-in 0.3s;
+
+    &:hover {
+      background-color: #235893;
+    }
+  }
+
+  .socialBtnTwitter{
+    background-color: $socialBtnTwitter;
+    color: $white-color;
+    margin-right: 10px;
+    transition: all ease-in 0.3s;
+
+    &:hover {
+      background-color: #006a86;
+    }
+  }
+
+  .socialBtnPinterest {
+    background-color: $socialBtnPinterest;
+    color: $white-color;
+    margin-right: 10px;
+    transition: all ease-in 0.3s;
+
+    &:hover {
+      background-color: #800002;
+    }
+  }
+
+  .socialBtnPlus {
+    display: flex;
+    padding: 10px 20px;
+    background: $main-color;
+    color: $white-color;
+
+    text-align: center;
+    transition: all ease-in 0.3s;
+
+    svg {
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    &:hover {
+      background-color: $background-color-Input;
+    }
+  }
+}

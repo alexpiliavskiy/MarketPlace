@@ -1,0 +1,307 @@
+@import 'src/styles/variables';
+
+.productMetaContainer {
+  margin-top: 30px;
+
+  .quantityControl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border: 2px solid rgb(228, 228, 228);
+    width: 140px;
+    height: 60px;
+
+    .minusBtn,
+    .plusBtn {
+      color: $main-color;
+      background-color: transparent;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 100%;
+    }
+
+    .text {
+      color: $main-color;
+      font-family: $font-family;
+      font-size: $font-size-main;
+      font-weight: $font-weight-main;
+      line-height: 24px;
+    }
+
+    .quantityInput {
+      background: transparent;
+      border: none;
+      text-align: center;
+      font-size: 24px;
+      width: 60px;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+
+  .addToCartBtn {
+    background-color: $main-color;
+    color: $white-color;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 21px 95px;
+    transition: all ease-in 0.3s;
+
+    &:hover {
+      background-color: $background-color-Input;
+      color: $white-color;
+    }
+  }
+
+  .actionButtons {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    background-color: transparent;
+
+    .favoritesBtn {
+      margin-right: 5px;
+      border-radius: 50%;
+      border: none;
+      background-color: transparent;
+      transition: all ease-in 0.3s;
+
+      &:hover {
+        background-color: $background-color-sale;
+        color: $white-color;
+      }
+    }
+
+    .addLink {
+      color: $main-color;
+      font-family: $font-family;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 24px;
+      position: relative;
+
+      &:after {
+        content: "";
+        width: 0;
+        height: 2px;
+        position: absolute;
+        left: 45px;
+        bottom: 0;
+        background: $main-color;
+        transition: width 0.28s cubic-bezier(0.47, 0, 0.745, 0.715);
+      }
+
+      &:hover {
+        background-color: transparent;
+        &:after {
+          width: calc(100% - 45px);
+        }
+      }
+    }
+
+    .shareBtn {
+      margin-left: 30px;
+      margin-right: 5px;
+      border-radius: 50%;
+      border: none;
+      background-color: transparent;
+      transition: all ease-in 0.3s;
+
+      &:hover {
+        background-color: $main-color;
+        color: $white-color;
+      }
+    }
+
+    .shareLink {
+      color: $main-color;
+      font-family: $font-family;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 24px;
+      position: relative;
+
+      &:after {
+        content: "";
+        width: 0;
+        height: 2px;
+        position: absolute;
+        left: 76px;
+        bottom: 0;
+        margin-bottom: -5px;
+        background: $main-color;
+        transition: width 0.28s cubic-bezier(0.47, 0, 0.745, 0.715);
+      }
+
+      &:hover {
+        background-color: transparent;
+
+        &:after {
+          width: calc(100% - 76px);
+        }
+      }
+    }
+  }
+
+  .tagSection {
+    margin-top: 32px;
+
+    .categoriesContainer {
+      display: flex;
+
+      .categoryTitle {
+        font-family: $font-family;
+        font-weight: $font-weight-main;
+        color: $second-color;
+        font-size: 13px;
+        line-height: 24px;
+        margin-right: 5px;
+      }
+
+      .categorySubTitle {
+        color: $main-color;
+        font-family: $font-family;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 24px;
+        position: relative;
+
+        &:after {
+          content: "";
+          width: 0;
+          height: 2px;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          background: $main-color;
+          transition: width 0.28s cubic-bezier(0.47, 0, 0.745, 0.715);
+        }
+
+        &:hover {
+          background-color: transparent;
+
+          &:after {
+            width: calc(100% - 0px);
+          }
+        }
+      }
+    }
+
+    .tagsContainer {
+      display: flex;
+
+      .tagTitle {
+        font-family: $font-family;
+        font-weight: $font-weight-main;
+        color: $second-color;
+        font-size: 13px;
+        line-height: 24px;
+        margin-right: 5px;
+      }
+
+      .tagSubTitle {
+        color: $main-color;
+        font-family: $font-family;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 24px;
+        position: relative;
+
+        &:after {
+          content: "";
+          width: 0;
+          height: 2px;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          background: $main-color;
+          transition: width 0.28s cubic-bezier(0.47, 0, 0.745, 0.715);
+        }
+
+        &:hover {
+          background-color: transparent;
+
+          &:after {
+            width: calc(100% - 0px);
+          }
+        }
+      }
+    }
+
+    .leftText {
+      font-family: $font-family;
+      font-weight: $font-weight-main;
+      color: $second-color;
+      font-size: 13px;
+      line-height: 24px;
+    }
+
+    .tagText {
+      font-family: $font-family;
+      font-weight: $font-weight-main;
+      color: $second-color;
+      font-size: 13px;
+      line-height: 24px;
+    }
+
+    .skuLeftText {
+      display: flex;
+      font-family: $font-family;
+      font-weight: $font-weight-main;
+      color: $second-color;
+      font-size: 13px;
+      line-height: 24px;
+
+      .skuLeftLink {
+        color: $main-color;
+        font-family: $font-family;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 24px;
+        margin-left: 5px;
+      }
+    }
+
+    .linkTitle {
+      color: $main-color;
+      font-family: $font-family;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 24px;
+      position: relative;
+
+      &:after {
+        content: "";
+        width: 0;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: $main-color;
+        transition: width 0.28s cubic-bezier(0.47, 0, 0.745, 0.715);
+      }
+
+      &:hover {
+        background-color: transparent;
+
+        &:after {
+          width: calc(100% - 0px);
+        }
+      }
+    }
+
+    .MuiTypography-root {
+      margin-bottom: 10px;
+    }
+  }
+}

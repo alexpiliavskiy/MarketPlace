@@ -1,0 +1,173 @@
+@import 'src/styles/variables';
+
+.leftBreadcrumbContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .leftBtn {
+    position: relative;
+    font-family: $font-family;
+    color: $main-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+
+    &:after {
+      content: "";
+      width: 20%;
+      height: 2px;
+      position: absolute;
+      left: 8px;
+      bottom: 0;
+      background: $main-color;
+      transition: width 0.28s cubic-bezier(0.47, 0, 0.745, 0.715);
+    }
+
+    &:hover {
+      background-color: transparent;
+
+      &:after {
+        width: calc(100% - 16px);
+      }
+    }
+  }
+}
+
+.selectWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.select {
+  background-color: $white-color;
+  color: $main-color;
+
+  .MuiSelect-select {
+    background-color: $main-color;
+    border-color: transparent;
+  }
+}
+
+.selectMenu {
+  .MuiPaper-root {
+    background-color: $main-color !important;
+  }
+}
+
+.verticalDivider {
+  align-items: center;
+  height: 22px;
+  width: 2px;
+  background-color: $text-color-footer;
+  margin: 0 23px;
+}
+
+.rotateDivider {
+  width: 2px;
+  height: 20px;
+  background-color: $main-color;
+  transform: rotate(30deg);
+  margin: 0 5px;
+}
+
+.rightBreadcrumbContainer {
+  justify-content: flex-end;
+  align-items: center;
+
+  .rightBtn {
+    position: relative;
+    font-family: $font-family;
+    color: $main-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+
+    &:after {
+      content: "";
+      width: 0;
+      height: 2px;
+      position: absolute;
+      left: 25px;
+      bottom: 0;
+      background: $main-color;
+      transition: width 0.28s cubic-bezier(0.47, 0, 0.745, 0.715);
+    }
+
+    &:hover {
+      background-color: transparent;
+      &:after {
+        width: calc(60% - 25px);
+      }
+    }
+  }
+}
+
+.filter {
+  position: relative;
+  font-family: $font-family;
+  color: $main-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+
+  .iconBtn {
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  .filterText {
+    color: $main-color;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  &:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+    background: $main-color;
+    transition: width 0.28s cubic-bezier(0.47, 0, 0.745, 0.715);
+  }
+
+  &:hover {
+    background-color: transparent;
+    &:after {
+      width: calc(82% - 30px);
+    }
+  }
+}
+
+
+@media (max-width: 991.98px) {
+  .leftBreadcrumbContainer {
+    display: none;
+  }
+
+  .filter, .selectWrapper {
+    margin: 0;
+    padding: 0;
+  }
+
+  .rightBreadcrumbContainer, .verticalDivider {
+    display: none;
+  }
+
+  .filter {
+    flex-grow: 0;
+    order: 1;
+    justify-content: flex-start;
+  }
+
+  .selectWrapper {
+    flex: 1;
+    order: 2;
+    justify-content: flex-end;
+  }
+}
